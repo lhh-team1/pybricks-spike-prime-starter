@@ -8,8 +8,8 @@ from robot import Robot, inches
 
 
 def run(robot):
-    robot.drive_base.straight(inches(10))  # drive forward 10 inches
-    robot.drive_base.turn(180)  # turn around (gyro keeps it accurate)
+    robot.drive_base.straight(inches(35))  # drive forward 10 inches
+    #robot.drive_base.turn(180)  # turn around (gyro keeps it accurate)
     robot.drive_base.stop()
 
 

@@ -23,11 +23,15 @@ from pybricks.robotics import DriveBase
 # Which port is each wheel motor plugged into?
 # If your robot drives backward when you tell it to go forward,
 # swap CLOCKWISE and COUNTERCLOCKWISE below.
-LEFT_WHEEL_PORT = Port.A
+LEFT_WHEEL_PORT = Port.E
 LEFT_WHEEL_DIRECTION = Direction.COUNTERCLOCKWISE
-RIGHT_WHEEL_PORT = Port.B
+RIGHT_WHEEL_PORT = Port.C
 RIGHT_WHEEL_DIRECTION = Direction.CLOCKWISE
 
+class Speed:
+    FAST =500
+    Medium = 250
+    Slow = 50
 # --- Robot measurements (in millimeters) ---
 # Wheel diameter is printed on the LEGO tire itself
 # (small SPIKE wheel = 56, big wheel = 62.4).
@@ -39,8 +43,8 @@ AXLE_TRACK_MM = 122
 # --- Attachment motors ---
 # Motors that move your arms, lifts, and other attachments.
 # If you only have one attachment motor, leave ATTACHMENT_2_PORT = None.
-ATTACHMENT_1_PORT = Port.F
-ATTACHMENT_2_PORT = Port.c  # e.g. Port.C if you add a second one
+ATTACHMENT_1_PORT = Port.A
+ATTACHMENT_2_PORT = Port.F  # e.g. Port.C if you add a second one
 
 # --- Sensors ---
 # Set the port for any sensor your robot has, or None if you don't have it.
@@ -52,6 +56,8 @@ FORCE_SENSOR_PORT = None  # the push-button touch sensor
 # The gyro (inside the hub) makes turns and straight lines more accurate.
 # You almost always want this on.
 USE_GYRO = True
+
+STRAIGHT_SLOW_SPEED = 100
 
 # ============================================================
 #  END OF EDIT SECTION — you shouldn't need to change below here
