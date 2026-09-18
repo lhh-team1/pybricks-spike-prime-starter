@@ -30,8 +30,9 @@ RIGHT_WHEEL_DIRECTION = Direction.CLOCKWISE
 
 class Speed:
     FAST =500
-    Medium = 250
-    Slow = 50
+    MEDIUM = 250
+    SLOW = 50
+
 # --- Robot measurements (in millimeters) ---
 # Wheel diameter is printed on the LEGO tire itself
 # (small SPIKE wheel = 56, big wheel = 62.4).
@@ -56,8 +57,6 @@ FORCE_SENSOR_PORT = None  # the push-button touch sensor
 # The gyro (inside the hub) makes turns and straight lines more accurate.
 # You almost always want this on.
 USE_GYRO = True
-
-STRAIGHT_SLOW_SPEED = 100
 
 # ============================================================
 #  END OF EDIT SECTION — you shouldn't need to change below here
