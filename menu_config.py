@@ -21,24 +21,16 @@ Heads up: the Pybricks Git extension's menu manager rewrites this file —
 comments inside the MENU_ITEMS list are not kept.
 """
 
-# ---------------------------------------------------------------------
-# Bundle hints — one `import` line per mission file listed below.
+# Bundle hints: these imports never run (the "if" below is always false).
+# They exist so your programs get uploaded to the hub along with main.py —
+# the uploader only sends files it sees in a real "import" line.
 #
-# These imports NEVER run: _BUNDLE_HINTS is False, so the whole block is
-# skipped. They are here because your programs are sent to the hub over
-# Bluetooth, and the uploader only sends a file if it sees a real
-# `import` line for it somewhere. The menu finds your missions by NAME
-# (the "module" text below), which the uploader can't see — so without
-# these lines the hub would say "no module named ..." when you press
-# CENTER.
-#
-# Add a matching `import` line here whenever you add a mission below.
-# ---------------------------------------------------------------------
+# Leave the "_BUNDLE_HINTS" name alone: "if False:" would be deleted by the
+# compiler and your programs would stop being uploaded.
 _BUNDLE_HINTS = False
 if _BUNDLE_HINTS:
-    import mission_01_go_out_and_turn
-    import mission_02_come_back_home
+    import mission_1
 
 MENU_ITEMS = [
-    {"display": 1, "module": "mission_1", "function": "main"},
+    {"display": 1, "module": "mission_1"},
 ]
