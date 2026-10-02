@@ -20,11 +20,11 @@ def run(robot):
     #window to the past
     robot.drive_base.settings(straight_speed=Speed.FAST)
     robot.drive_base.straight(inches(-4))
-    robot.drive_base.turn(-75.04)
+    robot.drive_base.turn(-80)
     robot.drive_base.straight(inches(-11))
     robot.drive_base.straight(inches(2.5))
-    robot.drive_base.arc(inches(-5.), distance=inches(19.2))
-    #Biocentric Architecturec
+    robot.drive_base.arc(inches(-6), distance=inches(19.2))
+    #Biocentric Architecture
     robot.drive_base.turn(-5)
     robot.attachment_1.run_angle(700, -82)
     robot.drive_base.straight(inches(-7))
