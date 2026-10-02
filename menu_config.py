@@ -30,7 +30,11 @@ comments inside the MENU_ITEMS list are not kept.
 _BUNDLE_HINTS = False
 if _BUNDLE_HINTS:
     import mission_1
+    import mission_2
+    import mission_3
 
 MENU_ITEMS = [
-    {"display": 1, "module": "mission_1"},
+    {"display": 1, "module": "mission_1", "function": "run"},
+    {"display": 2, "module": "mission_2", "function": "run"},
+    {"display": 3, "module": "mission_3", "function": "run"},
 ]
