@@ -1,5 +1,5 @@
-"""Mission 1: 
-R: Right of first major line + 2 minor back wheels straddleing the first two thick black lines right front wheel in corner
+"""Mission 4: exploding seeds 
+R: left orange "L" part lined up with first major line
 A: Forks
 P: 1
 """
@@ -13,7 +13,7 @@ def run(robot):
     robot.attachment_1.run_angle(100, -90)
     robot.drive_base.settings(straight_speed=Speed.FAST,turn_rate=999)
     robot.drive_base.arc(inches(-10.), distance=inches(-9))
-    robot.drive_base.straight(inches (-6))
+    robot.drive_base.straight(inches (-6.5))
     robot.attachment_1.run_until_stalled(100, then=Stop.HOLD)
     robot.drive_base.straight(inches (18))
  
