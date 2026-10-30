@@ -11,7 +11,7 @@ from pybricks.parameters import Stop
 
 def run(robot):
  robot.drive_base.settings(straight_speed=Speed.FAST)
- robot.drive_base.straight(inches (22.5))
+ robot.drive_base.straight(inches (-22.5))
  robot.drive_base.turn(90)
  robot.drive_base.straight(inches (-7.7))
  robot.drive_base.turn(-89)

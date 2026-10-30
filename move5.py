@@ -10,9 +10,12 @@ from pybricks.tools import wait
 from pybricks.parameters import Stop
 
 def run(robot):
+
     robot.drive_base.settings(straight_speed=Speed.FAST)
-    robot.drive_base.arc(inches(-14.), distance=inches(24), then=Stop.NONE)
-    robot.drive_base.straight(inches(48))
+    robot.drive_base.turn(87)
+    robot.drive_base.straight(inches(8))
+    robot.drive_base.turn(-83)
+    robot.drive_base.straight(inches(32))
     robot.drive_base.stop()
 
 # Lets you run JUST this mission: open this file and press F5.

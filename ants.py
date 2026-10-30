@@ -21,13 +21,15 @@ def run(robot):
     robot.drive_base.settings(straight_speed=Speed.FAST)
     robot.drive_base.straight(inches(-4))
     robot.drive_base.turn(-80)
-    robot.drive_base.straight(inches(-11))
+    robot.drive_base.straight(inches(-12))
     robot.drive_base.straight(inches(2.5))
     robot.drive_base.arc(inches(-6), distance=inches(19.2))
     #Biocentric Architecture
+    robot.drive_base.turn(-10)
     robot.drive_base.turn(-5)
+    #switch lines 28 and 19
     robot.attachment_1.run_angle(700, -82)
-    robot.drive_base.straight(inches(-7))
+    robot.drive_base.straight(inches(-5.5))
     robot.attachment_1.run_angle(900, -30)
     robot.drive_base.turn(-15)
     robot.drive_base.straight(inches(-2))
