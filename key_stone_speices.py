@@ -16,6 +16,7 @@ def run(robot):
     robot.drive_base.straight(inches(8))
     robot.drive_base.turn(-83)
     robot.drive_base.straight(inches(32))
+    robot.drive_base.straight(inches(-42))
     robot.drive_base.stop()
 
 # Lets you run JUST this mission: open this file and press F5.
