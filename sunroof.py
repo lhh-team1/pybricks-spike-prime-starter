@@ -1,6 +1,6 @@
 """Mission 1: 
-R: Right of first major line + 2 minor back wheels straddleing the first two thick black lines right front wheel in corner
-A: Forks
+R: left of third major line  back agaisnt wall
+A: none
 P: 1
 """
 #go from right lunch to lft lunch doing the sunroof on the way
