@@ -1,5 +1,5 @@
 """Mission eldertree (2)
-R: two first major lines clossest to the seed repository inbeteen the tires
+R: inner left wheel on first major line
 A: Forks
 P: 1
 """
@@ -25,10 +25,9 @@ def run(robot):
     robot.attachment_1.run_angle(100,110)
     robot.drive_base.straight(inches (8))
     robot.drive_base.turn(110)
-    robot.drive_base.straight(inches (-1.17))
     robot.attachment_2.run_angle(140,180)
     robot.drive_base.turn(-40)
-    robot.drive_base.straight(inches (-4.3))
+    robot.drive_base.straight(inches (-3.9))
     robot.attachment_2.run_angle(140,-170)
     robot.drive_base.straight(inches (-40))
 # Lets you run JUST this mission: open this file and press F5.

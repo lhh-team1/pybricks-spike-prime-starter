@@ -1,5 +1,5 @@
 """Mission 1: 
-R: Right of first major line + 2 minor back wheels straddleing the first two thick black lines right front wheel in corner
+R: left 5 hole beam on I
 A: Forks
 P: 1
 """
