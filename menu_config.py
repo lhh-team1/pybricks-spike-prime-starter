@@ -29,12 +29,22 @@ comments inside the MENU_ITEMS list are not kept.
 # compiler and your programs would stop being uploaded.
 _BUNDLE_HINTS = False
 if _BUNDLE_HINTS:
-    import mission_1
-    import mission_2
-    import mission_3
+    import antsplus
+    import eldertree_andfungi
+    import key_stone_speices
+    import move
+    import drone
+    import hopfully_seedpods
+    import sunroof
+    import rock
 
 MENU_ITEMS = [
-    {"display": 1, "module": "mission_1", "function": "run"},
-    {"display": 2, "module": "mission_2", "function": "run"},
-    {"display": 3, "module": "mission_3", "function": "run"},
+    {"display": 1, "module": "antsplus", "function": "run"},
+    {"display": 2, "module": "eldertree_andfungi", "function": "run"},
+    {"display": 3, "module": "key_stone_speices", "function": "run"},
+    {"display": 4, "module": "move", "function": "run"},
+    {"display": 5, "module": "drone", "function": "run"},
+    {"display": 6, "module": "hopfully_seedpods", "function": "run"},
+    {"display": 7, "module": "sunroof", "function": "run"},
+    {"display": 8, "module": "rock", "function": "run"},
 ]

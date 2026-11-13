@@ -1,0 +1,47 @@
+"""Mission 1: 
+Inner left wheel on first major line
+"""
+
+
+from robot import Robot, inches, Speed
+from pybricks.tools import wait
+
+def run(robot):
+    #leaf cutter
+    robot.drive_base.settings(straight_speed=Speed.FAST)
+    robot.drive_base.straight(inches(24))  # drive forward 10 inches
+    robot.drive_base.turn(-63)  # turn around (gyro keeps it accurate)
+    robot.drive_base.straight(inches(14.8))
+    robot.drive_base.turn(99)
+    robot.drive_base.settings(straight_speed=Speed.SLOW)
+    robot.drive_base.straight(inches(7))
+    #window to the past
+    robot.drive_base.settings(straight_speed=Speed.FAST)
+    robot.drive_base.straight(inches(-4))
+    robot.drive_base.turn(-80)
+    robot.drive_base.straight(inches(-12))
+    robot.drive_base.straight(inches(2.5))
+    robot.drive_base.arc(inches(-6), distance=inches(19.2))
+    #Biocentric Architecture
+    robot.drive_base.turn(-3)
+    robot.drive_base.turn(-12)
+
+    robot.attachment_1.run_angle(700, -75)
+    robot.drive_base.straight(inches(-5.2))
+    robot.drive_base.straight(inches(0.2))
+    robot.attachment_1.run_angle(900, -30)
+    robot.drive_base.turn(-20)
+    robot.drive_base.straight(inches(-2))
+    robot.drive_base.turn(5)
+    robot.attachment_1.run_angle(70, 60)
+    wait(1200)
+    robot.drive_base.settings(straight_speed=Speed.SLOW)
+    robot.drive_base.turn(25)
+    robot.drive_base.settings(straight_speed=Speed.FAST)
+    robot.drive_base.straight(inches(40))
+    robot.drive_base.stop()
+
+
+# Lets you run JUST this mission: open this file and press F5.
+if __name__ == "__main__":
+    run(Robot())
