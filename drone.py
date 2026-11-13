@@ -13,7 +13,7 @@ def run(robot):
     robot.drive_base.settings(straight_speed=Speed.FAST)
     robot.drive_base.straight(inches (20))
     robot.drive_base.arc(inches(-60), distance=inches(-19.2))
-    robot.drive_base.straight(inches (-38))
+    robot.drive_base.straight(inches (-8))
 
  
 # Lets you run JUST this mission: open this file and press F5.
