@@ -27,7 +27,7 @@ def run(robot):
     robot.drive_base.turn(110)
     robot.attachment_2.run_angle(140,180)
     robot.drive_base.turn(-40)
-    robot.drive_base.straight(inches (-3.9))
+    robot.drive_base.straight(inches (-7))
     robot.attachment_2.run_angle(140,-170)
     robot.drive_base.straight(inches (-40))
 # Lets you run JUST this mission: open this file and press F5.
