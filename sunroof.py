@@ -13,7 +13,7 @@ def run(robot):
  robot.drive_base.settings(straight_speed=Speed.FAST)
  robot.drive_base.straight(inches(-25))
  robot.drive_base.turn(100)
- robot.drive_base.straight(inches(-25))
+ robot.drive_base.straight(inches(-30))
  robot.drive_base.straight(inches(23))
  robot.drive_base.turn(-90)
  robot.drive_base.straight(inches(23))
