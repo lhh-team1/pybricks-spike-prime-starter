@@ -11,9 +11,9 @@ from pybricks.parameters import Stop
 
 def run(robot):
     robot.drive_base.settings(straight_speed=Speed.FAST)
-    robot.drive_base.straight(inches (20))
+    robot.drive_base.straight(inches (40))
     robot.drive_base.arc(inches(-47), distance=inches(-19.2))
-    robot.drive_base.straight(inches (-5))
+    robot.drive_base.straight(inches (-10))
 
  
 # Lets you run JUST this mission: open this file and press F5.
